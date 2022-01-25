@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div class="content" style="color: red;"><span class="name" style="font-weight: bold;">{{name}}....</span></div>
+    </div>
+    <script src="../dist/umd/vue.js"></script>
+    <script>
+        let vm = new Vue({
+            el:"#app",
+            data(){
+                return {
+                    name:"阿超啊",
+                    asd:{  
+                        hguy:"565645",
+                        asdaf:{
+                            oiasd:{
+                                hojoj:123456
+                            }
+                        },
+                        arr:[1,8,8965,"kmoijo",{name:"xxx",age:22}]
+                    }
+                }
+            }
+        })
+    vm._data.asd.arr.splice(2,1,{name:"achao",age:26},[123,56541,5656,{a:1}])
+    vm.name = 456
+    </script>
+</body>
+</html>
